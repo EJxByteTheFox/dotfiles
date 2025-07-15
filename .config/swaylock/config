@@ -1,27 +1,26 @@
 screenshots
-effect-blur 7x8 # HEAVY blur
+effect-blur=7x8
 clock
 ignore-empty-password
 indicator-caps-lock
 indicator-idle-visible
-show-keyboard-layout
 
-indicator-radius 50
-indicator-thickness 5
+indicator-radius=80
+indicator-thickness=5
 
-inside-color 1b1b1b # bg-dim
-ring-color   3c3836 # bg-cw
-key-hl-color a9b665 # green
+inside-color=1b1b1b
+ring-color=3c3836 
+key-hl-color=a9b665 
 
-inside-caps-lock-color 1b1b1b # bg-dim
-ring-caps-lock-color   ea6962 # red
+inside-caps-lock-color=1b1b1b
+ring-caps-lock-color=ea6962
 
-inside-clear-color 4f422e
+inside-clear-color=4f422e
 
-inside-ver-color 374141
-ring-ver-color   0e363e
+inside-ver-color=374141
+ring-ver-color=0e363e
 
-inside-wrong-color 402120
-ring-wrong-color   ea6962
+inside-wrong-color=402120
+ring-wrong-color=ea6962
 
-text-color ddc7a1
+text-color=ddc7a1
