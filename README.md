@@ -5,8 +5,6 @@ These are my dotfiles for SwayFX. they adhere to the gruvbox material dark mediu
 ## Provides configs for 
 
 * SwayFX
-* Neovim
-* Neovide
 * Waybar
 * Wofi
 * GTK
