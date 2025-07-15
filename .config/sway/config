@@ -1,0 +1,20 @@
+# SSSSSSSSSSS WWW           WWW AAAAAAAAAAAAAA YYY         YYY
+# SSSSSSSSSSS WWW           WWW AAAAAAAAAAAAAA YYY         YYY
+# SSS         WWW    WWW    WWW AAA        AAA YYY         YYY
+# SSS         WWW    WWW    WWW AAA        AAA YYY         YYY
+# SSS         WWW    WWW    WWW AAA        AAA YYY         YYY
+# SSSSSSSSSSS WWW    WWW    WWW AAAAAAAAAAAAAA YYYYYYYYYYYYYYY
+# SSSSSSSSSSS WWW    WWW    WWW AAAAAAAAAAAAAA YYYYYYYYYYYYYYY
+#         SSS WWW    WWW    WWW AAA        AAA       YYY
+#         SSS WWW    WWW    WWW AAA        AAA       YYY
+#         SSS WWW    WWW    WWW AAA        AAA       YYY
+# SSSSSSSSSSS WWWWWWWWWWWWWWWWW AAA        AAA       YYY
+# SSSSSSSSSSS WWWWWWWWWWWWWWWWW AAA        AAA       YYY
+
+include ./startup
+include ./idle
+include ./keybinds
+include ./window
+include ./keybinds
+include ./fx
+include ./power

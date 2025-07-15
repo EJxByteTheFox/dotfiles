@@ -1,0 +1,105 @@
+@define-color bg-dim        #1b1b1b;
+@define-color bg0           #282828; 
+@define-color bg1           #32302f;
+@define-color bg2           #45403d;
+@define-color bg3           #5a542c;
+@define-color bg_statusline #3a3735;
+@define-color bg_statusline #504945;
+@define-color bg_diff_green #34381b;
+@define-color bg_vis_green  #3b4439;
+@define-color bg_diff_red   #402120;
+@define-color bg_vis_red    #4c3432;
+@define-color bg_diff_blue  #0e363e;
+@define-color bg_vis_blue   #374141;
+@define-color bg_diff_yel   #4f422e;
+@define-color bg_cur_word   #3c3836;
+@define-color fg0           #d4be98;
+@define-color fg1           #ddc7a1;
+@define-color red           #ea6962;
+@define-color orange        #e78a4e;
+@define-color yellow        #d8a657;
+@define-color green         #a9b665;
+@define-color aqua          #89b482;
+@define-color blue          #7daea3;
+@define-color purple        #d3869b;
+@define-color grey0         #7c6f64;
+@define-color grey1         #928374;
+@define-color grey2         #a89984;
+
+* {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 14px;
+  min-height: 0;
+  box-shadow: none;
+  color: @fg1;
+}
+
+window#waybar {
+  background-color: @bg-dim;
+  color: @fg1;
+}
+
+#workspaces button {
+  background-color: @bg-dim;
+  color: @fg1;
+  padding: 0 8px;
+  transition: 0.2s;
+}
+
+#workspaces button.active {
+  background-color: @bg3;
+  color: @green;
+}
+
+#workspaces button:hover {
+  background-color: @bg1;
+}
+
+#workspaces button.urgent {
+  background-color: @bg_red;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#tray,
+#pulseaudio,
+#backlight,
+#custom-launcher {
+  padding: 0 10px;
+  color: @fg1;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning {
+  color: @orange;
+}
+
+#battery.critical {
+  color: @red;
+}
+
+#pulseaudio.muted {
+  background-color: @bg_vis_red;
+}
+
+#network.disconnected {
+  color: #f38ba8;
+}
+
+#tray {
+  background: transparent;
+  padding: 0 4px;
+}
+
+#window {
+  background: transparent;
+  color: @fg1;
+  font-weight: bold;
+  padding: 0 12px;
+}

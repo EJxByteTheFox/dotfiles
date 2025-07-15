@@ -1,0 +1,16 @@
+# Effects (SwayFX)
+
+blur enable
+blur_xray disable
+
+blur_passes 4
+blur_radius 7
+
+shadows enable
+shadow_blur_radius 7
+shadow_offset -5 -5
+
+corner_radius 10
+
+# Define window effects here. Or in the App's config
+

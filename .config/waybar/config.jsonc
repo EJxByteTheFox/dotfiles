@@ -1,0 +1,99 @@
+{
+  // Top-level configuration for Waybar
+  "layer": "top", // Display layer: "top" or "bottom"
+  "position": "bottom", // Position of the bar: "top" or "bottom"
+  "modules-left": [
+    "sway/workspaces", // Show Sway workspaces
+    "sway/mode"        // Show current Sway mode
+  ],
+  "modules-center": [
+    "sway/window"
+  ],
+  "modules-right": [
+    "mpd", // Music player status
+    "network", // Network status
+    "pulseaudio", // Audio volume
+    "battery", // Battery status
+    "custom/notifications", // Custom notifications module
+    "tray", // System tray
+    "clock",
+    "custom/power" // Custom power module
+  ],
+  "clock": {
+    "format": "{:%a %d %b %H:%M}", // Date/time format
+    "tooltip-format": "{:%Y-%m-%d %H:%M:%S}" // Tooltip format
+  },
+  "network": {
+    "format-wifi": " {essid}", // WiFi format
+    "format-ethernet": " {ifname}", // Ethernet format
+    "format-disconnected": "󰱟" // Disconnected format
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "battery": {
+    "states": {
+       // "good": 95,
+       "warning": 30,
+       "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "tray": {
+    "icon-size": 16, // Tray icon size
+    "spacing": 8 // Space between tray icons
+  },
+  "mpd": {
+    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+    "format-disconnected": "Disconnected ",
+    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+    "unknown-tag": "N/A",
+    "interval": 5,
+    "consume-icons": {
+      "on": " "
+    },
+    "random-icons": {
+      "off": "<span color=\"#f53c3c\"></span> ",
+      "on": " "
+    },
+    "repeat-icons": {
+      "on": " "
+    },
+    "single-icons": {
+      "on": "1 "
+    },
+    "state-icons": {
+      "paused": "",
+      "playing": ""
+    },
+    "tooltip-format": "MPD (connected)",
+    "tooltip-format-disconnected": "MPD (disconnected)"
+  },
+  "custom/power": {
+    "format": "⏼", // Format for power module
+    "on-click": "systemctl poweroff", // Action on click
+    "on-click-right": "systemctl reboot" // Action on right-click
+  },
+}

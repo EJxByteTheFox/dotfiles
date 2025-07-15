@@ -1,0 +1,17 @@
+# Hibernation disabled.
+
+set $pwr_mode Power: (l)ock (e)xit (s)uspend (S)hutdown (r)eboot (U)EFI
+
+mode "$pwr_mode" {
+  bindsym l exec swaylock, mode "default"
+  bindsym e for-window [*] kill; exit
+  bindsym s exec 'systemctl suspend', mode "default"
+  bindsym Shift+s exec 'systemctl poweroff'
+  bindsym r exec 'systemctl reboot'
+  bindsym Shift+u exec 'systemctl reboot --firmware-setup'
+
+  bindsym Escape mode "default"
+  bindsym Return mode "default" 
+}
+
+bindsym Mod4+Shift+e mode "$pwr_mode"

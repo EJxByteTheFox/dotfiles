@@ -1,0 +1,14 @@
+max-history=10
+max-visible=1
+
+layer=top
+
+anchor=top-center
+
+border-size=2
+border-radius=10
+border-color=#32302f
+background-color=#282828
+
+[mode=do-not-disturb]
+invisible=1

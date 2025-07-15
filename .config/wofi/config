@@ -1,0 +1,10 @@
+term=kitty
+
+key_up=k
+key_down=j
+hey_left=h
+key_right=l
+
+key_submit=Return
+
+stylesheet=./style.css
