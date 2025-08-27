@@ -10,6 +10,9 @@
   };
 
   home.stateVersion = "25.05";
+  home.username = "ellie";
+  home.homeDirectory = "/home/ellie";
+
 
   nixpkgs.config = {
     inherit system;

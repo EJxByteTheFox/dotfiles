@@ -16,10 +16,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager, nixvim } @inputs:
-  let
     username = "ellie";
-    system = "x86_64-linux";
-    stateVersion = "25.05";
 
     pkgs = import nixpkgs {
       inherit system;
@@ -33,8 +30,6 @@
 
       extraSpecialArgs = {
         inherit inputs;
-        inherit username;
-        inherit stateVersion;
       };
 
       modules = [
