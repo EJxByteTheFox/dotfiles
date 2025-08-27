@@ -9,6 +9,8 @@
     inherit stateVersion username homeDirectory;
   };
 
+  home.stateVersion = "25.05";
+
   nixpkgs.config = {
     inherit system;
     allowUnfree = true;
