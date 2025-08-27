@@ -41,5 +41,7 @@
         ./home.nix
       ];
     };
+
+    homeManagerModules.${username} = import ./home.nix;
   };
 }
