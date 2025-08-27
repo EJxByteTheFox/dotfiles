@@ -16,6 +16,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager, nixvim } @inputs:
+  let
     username = "ellie";
 
     pkgs = import nixpkgs {
