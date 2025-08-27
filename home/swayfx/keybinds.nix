@@ -12,7 +12,7 @@ in
         "${super}+Shift+q"  = "kill";
         "${super}+d"        = "exec ${pkgs.wofi}/bin/wofi --show drun";
 
-        "${super}+Shift+e"  = "mode \"${pwr_mode}\""
+        "${super}+Shift+e"  = "mode \"${pwr_mode}\"";
         "${super}+r"        = "mode \"resize\"";
       };
 
