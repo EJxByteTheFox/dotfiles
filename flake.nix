@@ -35,11 +35,11 @@
         inherit inputs;
         inherit username;
         inherit stateVersion;
-      }
+      };
 
       modules = [
         ./home.nix
       ];
     };
-  }
+  };
 }
