@@ -6,7 +6,7 @@
   ];
 
   home = {
-    inherit stateVersion username homeDirectory;
+    inherit username homeDirectory;
   };
 
   home.stateVersion = "25.05";
