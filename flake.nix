@@ -35,7 +35,6 @@
         inherit inputs;
         inherit username;
         inherit stateVersion;
-        inherit username;
       }
 
       modules = [
