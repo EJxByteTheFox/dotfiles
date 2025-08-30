@@ -5,14 +5,9 @@
     ./home/swayfx/default.nix
   ];
 
-  home = {
-    inherit username homeDirectory;
-  };
-
   home.stateVersion = "25.05";
   home.username = "ellie";
   home.homeDirectory = "/home/ellie";
-
 
   nixpkgs.config = {
     inherit system;
