@@ -8,5 +8,5 @@
   ];
 
   wayland.windowManager.sway.enable = true;
-  wayland.windowManager.sway.package = pkgs.swayfx;
+  wayland.windowManager.sway.package = ${pkgs.swayfx};
 }
